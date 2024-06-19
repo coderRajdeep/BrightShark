@@ -1,0 +1,167 @@
+
+.big00
+{
+  background-image: url("../../Assets/login-background.png");
+  width: 100%;
+  height:100vh;
+background-size: 90%;
+background-repeat: no-repeat;
+}
+.login00 {
+  width: 600px;
+  /* max-width: 900px; */
+  margin: auto;
+  /* padding: 1rem; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  padding: 20px, 20px, 43px, 20px;
+  top: 15%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  left: 27%;
+  /* height: 500px;  */
+}
+
+.login00 > form {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.login00 > form input {
+  width: 450px;
+  margin-bottom: 4%;
+  height: 52px;
+  /* margin-left: 2% 2%; */
+  border-radius: 20px; 
+  /* border: 2% solid lightgrey; */
+  outline: none;
+  color: #000000;
+  font-family: Nunito Sans;
+  align-items:center;
+  font-size: 20px;
+  margin-left: 14%; 
+  /* margin-right: 8%; */
+}
+.login00 form input[type="checkbox"] {
+  display: none;
+}
+
+.login00 form .checkboxContainer {
+  position: relative;
+  
+  cursor: pointer;
+}
+
+.login00 form .checkmark {
+  position: absolute;
+  margin-left: -40px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+/* 
+.login00 form input[type="checkbox"]:checked + .checkmark:after {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+} */
+
+.login00 form input[type="checkbox"]:checked + .checkmark::after {
+  content: "\2713"; /* Unicode character for checkmark */
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.login00 form input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+}
+
+.login00 .termsContainer,
+.login00 .privacyContainer {
+  width: 90%;
+  margin-top: 10%;
+  max-height: 150px; 
+  overflow-y: auto; 
+  border: 1px solid lightgrey;
+  border-radius: 5%;
+  padding: 10%;
+} 
+
+.login00 .scrollableContent {
+  overflow-y: auto; 
+}
+
+
+
+.button_common100 {
+  width: 60%;
+  height: 12%;
+  margin-top: 6%;
+  margin-left: 20%; 
+  align-items: center;
+  background-color: #F0B310;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: Nunito Sans;
+  color: #060606;
+  margin-bottom: 8%;
+}
+
+.whirlpool00 {
+  max-width: 80%;
+  width: 40%;
+  height: 38%;
+  margin-top: 5%;
+  margin-left: 28%;
+  margin-right: 13%;
+}
+
+@media (min-width: 2000px) {
+  .login00 {
+    width: 40%;
+    max-width: 480px;
+    height: 30vh;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center; /* Horizontally center the modal */
+  align-items: center; /* Vertically center the modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust the width of the modal content */
+  max-width: 600px; /* Set a maximum width */
+  border-radius: 10px;
+  position: relative;
+  font-family: Nunito Sans;
+  font-size: larger;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
